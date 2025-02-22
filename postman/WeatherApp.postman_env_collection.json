@@ -1,0 +1,21 @@
+{
+	"id": "bcc0cc03-57e8-4fc1-b11f-6695d6181c4f",
+	"name": "WeatherApp",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-02-22T14:50:27.580Z",
+	"_postman_exported_using": "Postman/11.33.5"
+}

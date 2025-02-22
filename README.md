@@ -105,6 +105,20 @@ npm run test:cov
 ### **Swagger Documentation**
 Swagger documentation is available at `/api/docs`.
 
+## 📬 Postman Collection
+For quick testing, import the Postman collection:
+
+1️⃣ Download the [Postman Collection](postman/WeatherApp.postman_collection.json) [Environment Collection](postman/WeatherApp.postman_env_collection.json)  
+2️⃣ Open Postman and go to **File > Import**.  
+3️⃣ Select the downloaded `.json` file.  
+4️⃣ Set up environment variables for API keys and authentication.
+
+This collection includes:
+- Auth (Signup/Login)
+- Weather APIs (Current & Forecast)
+- Favorite Locations APIs
+
+
 ### **GraphQL Support**
 GraphQL API is available at `/graphql` for `/locations` and `/weather` endpoints and supports queries such as:
 ```graphql
