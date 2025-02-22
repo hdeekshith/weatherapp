@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "hashedPassword123",
+  "locations": [],
+  "createdAt": "2024-02-21T12:00:00.000Z",
+  "updatedAt": "2024-02-21T12:00:00.000Z"
+}

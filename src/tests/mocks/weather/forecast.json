@@ -1,0 +1,30 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 40,
+  "list": [
+    {
+      "dt": 1740150000,
+      "main": {
+        "temp": 19.05,
+        "feels_like": 18.89,
+        "temp_min": 19.05,
+        "temp_max": 22.61,
+        "pressure": 1016,
+        "sea_level": 1016,
+        "grnd_level": 990,
+        "humidity": 72,
+        "temp_kf": -3.56
+      },
+      "weather": [
+        { "id": 801, "main": "Clouds", "description": "few clouds", "icon": "02n" }
+      ],
+      "clouds": { "all": 20 },
+      "wind": { "speed": 2.99, "deg": 263, "gust": 7.18 },
+      "visibility": 10000,
+      "pop": 0,
+      "sys": { "pod": "n" },
+      "dt_txt": "2025-02-21 15:00:00"
+    }
+  ]
+}

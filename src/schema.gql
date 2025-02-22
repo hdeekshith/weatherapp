@@ -1,0 +1,137 @@
+
+type Clouds {
+  all: Int!
+}
+
+type CloudsWeather {
+  all: Int!
+}
+
+type Coordinates {
+  lat: Float!
+  lon: Float!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input FavoriteLocationDto {
+  city: String!
+}
+
+type ForecastItem {
+  clouds: Clouds!
+  dt: Int!
+  dt_txt: String!
+  main: WeatherMain!
+  pop: Float!
+  sys: Sys!
+  visibility: Int!
+  weather: [WeatherInfo!]!
+  wind: Wind!
+}
+
+type ForecastResponse {
+  cnt: Int!
+  cod: String!
+  list: [ForecastItem!]!
+  message: Int!
+}
+
+type Location {
+  city: String!
+  createdAt: DateTime!
+  id: Int!
+}
+
+type MainWeather {
+  feels_like: Float!
+  grnd_level: Int
+  humidity: Int!
+  pressure: Int!
+  sea_level: Int
+  temp: Float!
+  temp_max: Float!
+  temp_min: Float!
+}
+
+type Mutation {
+  deleteFavoriteLocation(id: Int!): String!
+  favoriteLocation(input: FavoriteLocationDto!): String!
+}
+
+type Query {
+  getFavoriteLocations: [Location!]!
+  getForecast(input: WeatherDto!): ForecastResponse!
+  getWeather(input: WeatherDto!): WeatherResponse!
+}
+
+type Sys {
+  pod: String!
+}
+
+type SysWeather {
+  country: String!
+  id: Int!
+  sunrise: Int!
+  sunset: Int!
+  type: Int!
+}
+
+type WeatherDetails {
+  description: String!
+  icon: String!
+  id: Int!
+  main: String!
+}
+
+input WeatherDto {
+  city: String!
+}
+
+type WeatherInfo {
+  description: String!
+  icon: String!
+  id: Int!
+  main: String!
+}
+
+type WeatherMain {
+  feels_like: Float!
+  grnd_level: Int!
+  humidity: Int!
+  pressure: Int!
+  sea_level: Int!
+  temp: Float!
+  temp_max: Float!
+  temp_min: Float!
+}
+
+type WeatherResponse {
+  base: String!
+  clouds: CloudsWeather!
+  cod: Int!
+  coord: Coordinates!
+  dt: Int!
+  id: Int!
+  main: MainWeather!
+  name: String!
+  sys: SysWeather!
+  timezone: Int!
+  visibility: Int!
+  weather: [WeatherDetails!]!
+  wind: WindWeather!
+}
+
+type Wind {
+  deg: Int!
+  gust: Float!
+  speed: Float!
+}
+
+type WindWeather {
+  deg: Int!
+  speed: Float!
+}
